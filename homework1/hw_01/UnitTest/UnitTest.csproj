@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.0"/>
+        <PackageReference Include="xunit" Version="2.4.2"/>
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.4.5">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <ProjectReference Include="..\DataStructures\DataStructures.csproj">
+            <Project>{464251A0-3667-42BA-A3D5-0581D65C442B}</Project>
+            <Name>DataStructures</Name>
+        </ProjectReference>
+        <ProjectReference Include="..\Algorithms\Algorithms.csproj">
+            <Project>{8F59D573-A1B8-438F-A67A-A7F11FACF201}</Project>
+            <Name>Algorithms</Name>
+        </ProjectReference>
+    </ItemGroup>
+
+</Project>
